@@ -71,6 +71,9 @@ Backup/Restore works for simple migrations but introduces downtime.
 AWS DMS is powerful for real-world migrations where uptime is critical.
 Importance of correctly configuring security groups, endpoints, and IAM roles.
 Homogeneous migrations (Postgres → Postgres) are straightforward, while heterogeneous ones (e.g., MySQL → Postgres) require AWS Schema Conversion Tool (SCT).
+
+![Creating End Points](img4.png)
+
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 🔹 Conclusion
