@@ -52,7 +52,8 @@ DMS performed the full load of existing data and also handled ongoing replicatio
 Endpoint connectivity issues: Solved by updating security groups and ensuring public access for testing.
 SSL requirements: Configured endpoints with SSL to match DMS requirements.
 IAM roles: Ensured DMS had the correct permissions to access RDS.
-Press enter or click to view image in full size
+
+![pgAdmin Database Connection](img2.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
