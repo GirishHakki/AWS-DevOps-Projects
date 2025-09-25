@@ -13,7 +13,7 @@ This hands-on experience gave me a clear understanding of backup/restore migrati
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
-![Description of image](step1.png)
+![Steps to Follow](step1.png)
 
 🔹 Part 1: On-Prem → AWS RDS (PostgreSQL)
 In this case, I had a local PostgreSQL database running on my laptop. The goal was to back it up and restore it into an RDS PostgreSQL instance.
@@ -44,7 +44,7 @@ Created a Migration Task (Full Load + Ongoing Replication).
 Architecture
 DMS performed the full load of existing data and also handled ongoing replication (capturing ongoing changes from source to target). This ensures minimal downtime, making it production-ready.
 
-Press enter or click to view image in full size
+![pgAdmin Database Connection](img1.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
