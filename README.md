@@ -61,7 +61,8 @@ IAM roles: Ensured DMS had the correct permissions to access RDS.
 Successfully migrated testdb from on-prem PostgreSQL to AWS RDS PostgreSQL.
 Migrated sourcedb to targetdb in RDS using DMS with ongoing replication.
 Verified data in pgAdmin after migration.
-Press enter or click to view image in full size
+
+![AWS RDS Services](img3.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
