@@ -13,7 +13,7 @@ This hands-on experience gave me a clear understanding of backup/restore migrati
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
-Press enter or click to view image in full size
+![Description of image](img1.png)
 
 🔹 Part 1: On-Prem → AWS RDS (PostgreSQL)
 In this case, I had a local PostgreSQL database running on my laptop. The goal was to back it up and restore it into an RDS PostgreSQL instance.
