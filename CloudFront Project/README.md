@@ -12,7 +12,7 @@ Here’s what we’ll achieve by the end of this project 👇
 
 🌐 Architecture Diagram
 
-![AWS RDS Services](Architecture Diagram.png)
+![AWS RDS Services](Architecture.png)
 
 User → Route 53 (DNS) → CloudFront (CDN + SSL) → S3 (Static Website)
 Description:
@@ -61,7 +61,8 @@ cloudfront.yourdomain.com
 ✅ After creation, you’ll get a CloudFront domain like:
 
 d####4jmp##f2.yourdomain.com
-Press enter or click to view image in full size
+
+![AWS RDS Services](Distributions.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
@@ -87,8 +88,9 @@ To allow CloudFront to access your S3 bucket, the following policy will usually 
     }
   ]
 }
-Press enter or click to view image in full size
-Press enter or click to view image in full size
+
+![AWS RDS Services](s3.png)
+![AWS RDS Services](S3_Bucket_Policy.png)
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 Step 5️⃣ — Create DNS Record in Route 53
@@ -136,7 +138,7 @@ HTTPS security
 Custom domain integration
 This project demonstrates core AWS and DevOps skills — perfect for showcasing on resumes and portfolios 🚀
 
-Press enter or click to view image in full size
+![AWS RDS Services](page1.png)
 
 
 
