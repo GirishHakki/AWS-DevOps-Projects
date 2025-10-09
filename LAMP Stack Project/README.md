@@ -4,8 +4,6 @@ Instead of storing the WordPress database locally, we’ll use Amazon RDS (MySQL
 
 This project demonstrates how to set up a cloud-hosted WordPress environment with proper networking, database connection, and Apache web server configuration — all under AWS Free Tier.
 
-— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
-
 ![AWS RDS Services](Diagram.png)
 
 User → EC2 (WordPress + Apache + PHP) → RDS (MySQL Database)
@@ -24,7 +22,6 @@ DB instance identifier: mysqlamp
 Master username: admin
 Password: yourpwd
 8. Instance configuration: db.t3.micro
-
 9. Storage:
 
 Type: General Purpose SSD (gp2)
