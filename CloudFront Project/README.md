@@ -12,7 +12,7 @@ Here’s what we’ll achieve by the end of this project 👇
 
 🌐 Architecture Diagram
 
-Press enter or click to view image in full size
+![AWS RDS Services](Architecture Diagram.png)
 
 User → Route 53 (DNS) → CloudFront (CDN + SSL) → S3 (Static Website)
 Description:
