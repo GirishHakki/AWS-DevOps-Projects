@@ -129,8 +129,8 @@ Integrate methods with Lambda functions.
 Enable CORS for GET and POST in API Gateway (this adds OPTIONS and necessary headers).
 If you use Lambda proxy integration, ensure Lambda responses include Access-Control-Allow-Origin header too.
 Test APIs in the API Gateway console and from browser (network tab) to validate responses and headers.
-Press enter or click to view image in full size
 
+![Steps to Follow](api_gateway_copy.png)
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 IAM roles & permissions
@@ -162,7 +162,8 @@ Add the certificate to the CloudFront distribution (Alternate Domain Name set to
 Set Default Root Object = index.html.
 Route53 = Create a hosted zone for your domain, add an A (Alias) record pointing to the CloudFront distribution. That gives you https://employee.yourdomain.com.
 ACM DNS Validation = If you requested a wildcard certificate *.yourdomain.cloud, ACM will require creating a CNAME in Route53 to validate it. Once “INSYNC”, the certificate status becomes Issued.
-Press enter or click to view image in full size
+
+![Steps to Follow](s3_bucket.png)
 
 Deployment checklist (quick summary)
 Create DynamoDB table employeeData.
