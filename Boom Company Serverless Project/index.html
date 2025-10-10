@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boom Company Employee Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      width: 450px;
+      margin: 50px auto;
+      background-color: #cfd3d5;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #0077ff;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #saveBtn {
+      background-color: #f44336;
+    }
+
+    #viewBtn {
+      background-color: #0066cc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Boom Company Employee Data</h2>
+
+    <label for="empId">Employee ID:</label>
+    <input type="text" id="empId" />
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+
+    <label for="department">Department:</label>
+    <input type="text" id="department" />
+
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" />
+
+    <button id="saveBtn">Save Employee Data</button>
+    <button id="viewBtn">View all Employees</button>
+
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>Employee ID</th>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    const apiUrl = "https://cbccwoq4af.execute-api.ap-south-1.amazonaws.com/employeeapi";
+
+    // Save Employee Data (POST)
+    document.getElementById("saveBtn").addEventListener("click", async () => {
+      const empId = document.getElementById("empId").value;
+      const name = document.getElementById("name").value;
+      const department = document.getElementById("department").value;
+      const salary = document.getElementById("salary").value;
+
+      if (!empId || !name || !department || !salary) {
+        alert("Please fill all fields!");
+        return;
+      }
+
+      const employeeData = {
+        EmployeeID: empId,
+        Name: name,
+        Department: department,
+        Salary: salary
+      };
+
+      try {
+        const response = await fetch(apiUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(employeeData)
+        });
+
+        if (response.ok) {
+          alert("Employee data saved successfully!");
+          document.getElementById("empId").value = "";
+          document.getElementById("name").value = "";
+          document.getElementById("department").value = "";
+          document.getElementById("salary").value = "";
+        } else {
+          alert("Error saving data!");
+        }
+      } catch (error) {
+        alert("Error: " + error.message);
+      }
+    });
+
+    // View all Employees (GET)
+    document.getElementById("viewBtn").addEventListener("click", async () => {
+      try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+
+        const tbody = document.querySelector("#employeeTable tbody");
+        tbody.innerHTML = "";
+
+        data.forEach(emp => {
+          const row = `<tr>
+            <td>${emp.EmployeeID}</td>
+            <td>${emp.Name}</td>
+            <td>${emp.Department}</td>
+            <td>${emp.Salary}</td>
+          </tr>`;
+          tbody.innerHTML += row;
+        });
+      } catch (error) {
+        alert("Error loading data: " + error.message);
+      }
+    });
+  </script>
+</body>
+</html>
