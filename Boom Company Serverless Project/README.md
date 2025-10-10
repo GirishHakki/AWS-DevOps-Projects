@@ -109,7 +109,8 @@ def lambda_handler(event, context):
             'headers': {'Access-Control-Allow-Origin': '*'},
             'body': json.dumps({'error': str(e)})
         }
-Press enter or click to view image in full size
+        
+![Steps to Follow](api_gateway_copy.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
@@ -118,8 +119,8 @@ Static page contains a form for Employee ID, Name, Department, Salary, and two a
 
 Save Employee Data → sends a POST request to your API.
 View all Employees → sends a GET request and renders a table.
-Press enter or click to view image in full size
 
+![Steps to Follow](boom.png)
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
 API Gateway & CORS
