@@ -14,9 +14,9 @@ ACM (Certificate Manager) + Route53 to serve the app on a custom HTTPS domain.
 
 Architecture (high-level)
 
-(architecture_dia.png)
+![Steps to Follow](architecture_dia.png)
 
-Press enter or click to view image in full size
+![Steps to Follow](Project_Flowchart.png)
 
 — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
 
