@@ -148,8 +148,8 @@ sudo -s
 
 ---
 
-```
 From JumpServer → Connect to DBServer
+```
 vi your.pem   # create file
 # paste private key content
 :wq!
