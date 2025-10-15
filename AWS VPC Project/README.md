@@ -149,12 +149,12 @@ sudo -s
 ---
 
 From JumpServer → Connect to DBServer
-```
+```bash 
 vi your.pem   # create file
 # paste private key content
 :wq!
 chmod 400 reyazsir.pem
-ssh -i "reyazsir.pem" ec2-user@192.168.2.64
+ssh -i "your.pem" ec2-user@192.168.2.64
 sudo -s
 
 ```
