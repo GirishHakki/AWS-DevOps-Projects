@@ -163,12 +163,12 @@ sudo -s
 
 ### Step 9: Configure IAM Role & Attach to DBServer
 
-Go to IAM → Roles → Create Role
-Trusted entity: AWS Service → EC2
-Permissions: AmazonS3FullAccess
-Role name: myvpcrole
-Attach Role:
-EC2 → Select DBServer → Actions → Security → Modify IAM Role → myvpcrole
+* Go to IAM → Roles → Create Role
+*Trusted entity: AWS Service → EC2
+* Permissions: AmazonS3FullAccess
+* Role name: myvpcrole
+* Attach Role:
+* EC2 → Select DBServer → Actions → Security → Modify IAM Role → myvpcrole
 
 ---
 
@@ -193,14 +193,33 @@ aws s3 ls --region ap-south-1
 * Name: S3-VPCE
 * Service Type: AWS Services
 * Service: S3 (Gateway)
-VPC: MumbaiVPC
-Route Table: Private RT
-Click Create Endpoint
-Now your DBServer in the Private Subnet can access S3 without using the Internet Gateway or NAT Gateway.
+* VPC: MumbaiVPC
+* Route Table: Private RT
+* Click Create Endpoint
+* Now your DBServer in the Private Subnet can access S3 without using the Internet Gateway or NAT Gateway.
 
 ---
 
+### 🏁 Project Outcome
 
+* ✅ Built a fully functional VPC with public and private subnets
+*✅ Connected instances using JumpServer
+*✅ Enabled secure S3 access via VPC Endpoint
+*✅ Gained hands-on experience with AWS Networking, IAM, and EC2
+
+---
+
+### 🧩 Key Learnings
+
+* Difference between Public & Private Subnets
+
+* Role of Internet Gateway and NAT Gateway
+
+* Secure EC2 access through Bastion (JumpServer)
+
+* Using IAM Roles for EC2 → S3 Access
+
+* Implementing VPC Endpoints for private AWS connectivity
 
 
 
