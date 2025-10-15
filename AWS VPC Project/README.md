@@ -183,6 +183,34 @@ Create a new S3 bucket:
 
 aws s3 mb s3://your-vpce-role --region ap-south-1
 aws s3 ls --region ap-south-1
+```
+
+---
+
+### Step 11: Create VPC Endpoint for S3
+
+Go to VPC → Endpoints → Create Endpoint
+Name: S3-VPCE
+Service Type: AWS Services
+Service: S3 (Gateway)
+VPC: MumbaiVPC
+Route Table: Private RT
+Click Create Endpoint
+Now your DBServer in the Private Subnet can access S3 without using the Internet Gateway or NAT Gateway.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
