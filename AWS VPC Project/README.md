@@ -170,3 +170,20 @@ Role name: myvpcrole
 Attach Role:
 EC2 → Select DBServer → Actions → Security → Modify IAM Role → myvpcrole
 
+---
+
+Step 10: Access S3 from DBServer
+
+Verify AWS CLI:
+```bash
+aws --version
+
+
+Create a new S3 bucket:
+
+aws s3 mb s3://your-vpce-role --region ap-south-1
+aws s3 ls --region ap-south-1
+
+
+
+
