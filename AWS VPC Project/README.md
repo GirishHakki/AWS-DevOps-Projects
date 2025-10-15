@@ -25,7 +25,7 @@ The setup includes **Public and Private Subnets**, **Internet Gateway**, **NAT G
 
 ## 🖼️ Architecture Diagram
 
-![Architecture Diagram](A_digital_diagram_illustrates_an_AWS_(Amazon_Web_S.png)
+![Architecture Diagram](VPC_architecture.png)
 
 ---
 
