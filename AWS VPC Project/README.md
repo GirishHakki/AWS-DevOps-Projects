@@ -161,17 +161,12 @@ sudo -s
 
 ---
 
-Step 9: Configure IAM Role & Attach to DBServer
+### Step 9: Configure IAM Role & Attach to DBServer
 
 Go to IAM → Roles → Create Role
-
 Trusted entity: AWS Service → EC2
-
 Permissions: AmazonS3FullAccess
-
 Role name: myvpcrole
-
 Attach Role:
-
 EC2 → Select DBServer → Actions → Security → Modify IAM Role → myvpcrole
 
