@@ -198,6 +198,8 @@ Route Table: Private RT
 Click Create Endpoint
 Now your DBServer in the Private Subnet can access S3 without using the Internet Gateway or NAT Gateway.
 
+---
+
 
 
 
