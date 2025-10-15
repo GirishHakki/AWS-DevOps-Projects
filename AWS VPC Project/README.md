@@ -189,10 +189,10 @@ aws s3 ls --region ap-south-1
 
 ### Step 11: Create VPC Endpoint for S3
 
-Go to VPC → Endpoints → Create Endpoint
-Name: S3-VPCE
-Service Type: AWS Services
-Service: S3 (Gateway)
+* Go to VPC → Endpoints → Create Endpoint
+* Name: S3-VPCE
+* Service Type: AWS Services
+* Service: S3 (Gateway)
 VPC: MumbaiVPC
 Route Table: Private RT
 Click Create Endpoint
