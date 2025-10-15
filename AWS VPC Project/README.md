@@ -145,3 +145,14 @@ vi reyazsir.pem   # create file
 chmod 400 reyazsir.pem
 ssh -i "reyazsir.pem" ec2-user@192.168.2.64
 sudo -s
+
+---
+
+```
+Your entire content here
+Everything will appear line by line
+Without merging together
+```
+
+
+
