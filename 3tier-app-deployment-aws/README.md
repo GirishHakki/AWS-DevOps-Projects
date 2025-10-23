@@ -19,7 +19,7 @@ The architecture follows the standard **3-Tier Model**:
 
 ## 🗺️ Architecture Diagram
 
-![AWS 3-Tier Architecture](A_digital_diagram_illustrates_a_3-Tier_web_applica.png)
+![AWS 3-Tier Architecture](architecture.png)
 
 ---
 
