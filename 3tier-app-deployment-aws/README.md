@@ -231,6 +231,7 @@ Integrating EC2, RDS, and S3 for a production-like setup
 ---
 
 🧩 Repository Structure
+```
 ├── app-tier/
 │   ├── index.js
 │   ├── package.json
