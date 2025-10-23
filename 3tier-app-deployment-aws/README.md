@@ -154,8 +154,41 @@ TG: APP-TG
 Port: 4000
 
 Health Check Path: /health
+
 ---
 
+---
+### Step 7: Setup Web Server (Web Tier)
+
+Launch EC2 in Public Subnet:
+
+AMI: Amazon Linux 2023
+
+Type: t2.micro
+
+SG: Web-SG
+
+IAM Role: 3-tier-role
+
+Commands:
+
+sudo -s
+cd /home/ec2-user/
+
+curl -o- https://raw.githubusercontent.com/ReyazShaik/3tier-app-deployment-aws/main/install.sh | bash
+source ~/.bashrc
+nvm install 16
+nvm use 16
+npm install -g pm2
+
+sudo dnf install -y nginx
+cd /etc/nginx/
+sudo rm -rf nginx.conf
+sudo aws s3 cp s3://3-tier-project-demo/application-code/nginx.conf .
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+
+---
 
 
 
