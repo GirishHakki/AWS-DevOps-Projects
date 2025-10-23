@@ -250,9 +250,9 @@ Integrating EC2, RDS, and S3 for a production-like setup
 
 Girish Hakki
 AWS | DevOps | Data Analyst Enthusiast
-🌐 Portfolio
+* 🌐 Portfolio
 
-📧 girish.hakki.kuk@gmail.com
+* 📧 girish.hakki.kuk@gmail.com
 
 ---
 
