@@ -157,7 +157,6 @@ Health Check Path: /health
 
 ---
 
----
 ### Step 7: Setup Web Server (Web Tier)
 
 Launch EC2 in Public Subnet:
