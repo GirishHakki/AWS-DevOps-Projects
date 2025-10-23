@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS transactions(
 
 INSERT INTO transactions (amount, description) VALUES (400, 'awsbill');
 SELECT * FROM transactions;
----
+```
 
 
 
