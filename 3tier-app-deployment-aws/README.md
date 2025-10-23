@@ -256,6 +256,79 @@ AWS | DevOps | Data Analyst Enthusiast
 
 ---
 
+# 🌐 AWS 3-Tier Web Application Deployment Project
+
+[![AWS](https://img.shields.io/badge/Cloud-AWS-orange?logo=amazonaws)](https://aws.amazon.com/)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](https://nodejs.org/)
+[![PM2](https://img.shields.io/badge/Process_Manager-PM2-blue)](https://pm2.keymetrics.io/)
+[![Database](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)](https://aws.amazon.com/rds/mysql/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Status](https://img.shields.io/badge/Deployed-✅_Working-brightgreen)](https://boom.girishhakki.cloud)
+
+> 🚀 A complete 3-Tier Architecture deployment on AWS Cloud featuring **Web, Application, and Database tiers**, built using **EC2, RDS, ALB, S3, Node.js, and Nginx**.
+
+---
+
+## 🏗️ Architecture Overview
+
+The architecture follows the **3-Tier Model**:
+
+| Tier | Description | AWS Services Used |
+|------|--------------|-------------------|
+| **Web Tier** | Handles user requests and serves static content | EC2, External ALB, Nginx |
+| **Application Tier** | Executes application logic | EC2, Internal ALB, Node.js, PM2 |
+| **Database Tier** | Manages persistent storage | Amazon RDS (MySQL) |
+| **Supporting Services** | IAM, S3, NAT, IGW, and Security Groups | AWS Core Services |
+
+---
+
+## 🗺️ Architecture Diagram
+
+![AWS 3-Tier Architecture](A_digital_diagram_illustrates_a_3-Tier_web_applica.png)
+
+---
+
+## ⚙️ Technologies Used
+
+- **Amazon VPC** (Custom VPC, Public & Private Subnets)
+- **Amazon EC2** (Web & App Servers)
+- **Amazon RDS (MySQL)** (Database Layer)
+- **Amazon S3** (Code & Config Storage)
+- **Application Load Balancer (ALB)** (Internal & External)
+- **IAM Roles & Policies**
+- **Node.js**, **PM2**, **Nginx**
+- **Amazon Linux 2023**
+
+---
+
+## 🚀 Step-by-Step Deployment Guide
+
+### 🧱 Step 1: Create Custom VPC
+- CIDR Block: `192.168.0.0/16`
+- 2 Public Subnets (for Web)
+- 4 Private Subnets (for App & DB)
+- 1 NAT Gateway in Public Subnet
+- Attach Internet Gateway
+
+---
+
+### 🔒 Step 2: Create Security Groups
+
+| Security Group | Purpose | Inbound Rules |
+|----------------|----------|----------------|
+| **WebALB-SG** | Allow HTTP/HTTPS traffic from internet | 80, 443 |
+| **Web-SG** | Allow HTTP/HTTPS from WebALB | WebALB-SG |
+| **AppALB-SG** | Allow traffic from Web-SG | Web-SG |
+| **App-SG** | Allow internal TCP | AppALB-SG |
+| **Database-SG** | Allow DB access | App-SG |
+
+---
+
+### 🪣 Step 3: Create S3 Bucket
+- Name: `3-tier-project-demo`
+- Folder Structure:
+
+---
 
 
 
