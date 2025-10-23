@@ -189,5 +189,45 @@ sudo systemctl enable nginx
 
 ---
 
+---
+### Create External Load Balancer:
+
+Name: web-external-alb
+
+Scheme: Internet Facing
+
+TG: WEB-TG
+
+Port: 80
+
+SG: WebALB-SG
+
+### Step 8: Configure Domain (Optional)
+
+Request SSL Certificate via AWS Certificate Manager (ACM)
+
+Create Route53 record:
+Example: https://boom.girishhakki.cloud
+
+### 🧠 Key Learnings
+
+Building secure multi-tier architecture on AWS
+
+Configuring internal & external Application Load Balancers
+
+Managing Security Groups and private subnet routing
+
+Deploying Node.js apps using PM2
+
+Integrating EC2, RDS, and S3 for a production-like setup
+
+### 📊 Project Outcome
+
+✅ Successfully deployed a scalable 3-tier application architecture on AWS
+✅ Implemented network isolation using VPC & subnets
+✅ Automated app management using PM2 & S3
+✅ Exposed public ALB endpoint for frontend access
+
+---
 
 
