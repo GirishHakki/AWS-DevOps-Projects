@@ -84,3 +84,25 @@ The architecture follows the standard **3-Tier Model**:
 Connect from App Server:
 ```bash
 mysql -h <rds-endpoint> -u admin -p
+
+---
+
+### Create Database and Table:
+```MySQL
+CREATE DATABASE webappdb;
+USE webappdb;
+
+CREATE TABLE IF NOT EXISTS transactions(
+  id INT NOT NULL AUTO_INCREMENT,
+  amount DECIMAL(10,2),
+  description VARCHAR(100),
+  PRIMARY KEY(id)
+);
+
+INSERT INTO transactions (amount, description) VALUES (400, 'awsbill');
+SELECT * FROM transactions;
+
+```
+---
+
+
