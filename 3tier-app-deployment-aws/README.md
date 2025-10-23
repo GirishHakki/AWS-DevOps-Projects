@@ -85,10 +85,10 @@ Connect from App Server:
 ```bash
 mysql -h <rds-endpoint> -u admin -p
 
----
 
+---
 ### Create Database and Table:
-```MySQL
+```
 CREATE DATABASE webappdb;
 USE webappdb;
 
@@ -101,8 +101,6 @@ CREATE TABLE IF NOT EXISTS transactions(
 
 INSERT INTO transactions (amount, description) VALUES (400, 'awsbill');
 SELECT * FROM transactions;
-
-```
 ---
 
 
