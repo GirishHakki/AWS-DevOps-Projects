@@ -288,47 +288,6 @@ The architecture follows the **3-Tier Model**:
 
 ---
 
-## ⚙️ Technologies Used
-
-- **Amazon VPC** (Custom VPC, Public & Private Subnets)
-- **Amazon EC2** (Web & App Servers)
-- **Amazon RDS (MySQL)** (Database Layer)
-- **Amazon S3** (Code & Config Storage)
-- **Application Load Balancer (ALB)** (Internal & External)
-- **IAM Roles & Policies**
-- **Node.js**, **PM2**, **Nginx**
-- **Amazon Linux 2023**
-
----
-
-## 🚀 Step-by-Step Deployment Guide
-
-### 🧱 Step 1: Create Custom VPC
-- CIDR Block: `192.168.0.0/16`
-- 2 Public Subnets (for Web)
-- 4 Private Subnets (for App & DB)
-- 1 NAT Gateway in Public Subnet
-- Attach Internet Gateway
-
----
-
-### 🔒 Step 2: Create Security Groups
-
-| Security Group | Purpose | Inbound Rules |
-|----------------|----------|----------------|
-| **WebALB-SG** | Allow HTTP/HTTPS traffic from internet | 80, 443 |
-| **Web-SG** | Allow HTTP/HTTPS from WebALB | WebALB-SG |
-| **AppALB-SG** | Allow traffic from Web-SG | Web-SG |
-| **App-SG** | Allow internal TCP | AppALB-SG |
-| **Database-SG** | Allow DB access | App-SG |
-
----
-
-### 🪣 Step 3: Create S3 Bucket
-- Name: `3-tier-project-demo`
-- Folder Structure:
-
----
 
 
 
