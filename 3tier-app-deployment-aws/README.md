@@ -243,6 +243,20 @@ Integrating EC2, RDS, and S3 for a production-like setup
 ├── nginx.conf
 └── README.md
 
+```
 ---
+
+### 📬 Author
+
+Girish Hakki
+AWS | DevOps | Data Analyst Enthusiast
+🌐 Portfolio
+
+📧 girish.hakki.kuk@gmail.com
+
+---
+
+
+
 
 
