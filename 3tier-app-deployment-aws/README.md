@@ -263,6 +263,9 @@ AWS | DevOps | Data Analyst Enthusiast
 
 ---
 
+### Project Output Code
+![AWS 3-Tier Architecture](Architecture.png)
+
 
 
 
