@@ -223,10 +223,10 @@ Integrating EC2, RDS, and S3 for a production-like setup
 
 ### 📊 Project Outcome
 
-✅ Successfully deployed a scalable 3-tier application architecture on AWS
-✅ Implemented network isolation using VPC & subnets
-✅ Automated app management using PM2 & S3
-✅ Exposed public ALB endpoint for frontend access
+* ✅ Successfully deployed a scalable 3-tier application architecture on AWS
+* ✅ Implemented network isolation using VPC & subnets
+* ✅ Automated app management using PM2 & S3
+* ✅ Exposed public ALB endpoint for frontend access
 
 ---
 
