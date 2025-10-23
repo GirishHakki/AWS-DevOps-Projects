@@ -229,6 +229,7 @@ Integrating EC2, RDS, and S3 for a production-like setup
 * ✅ Exposed public ALB endpoint for frontend access
 
 ---
+
 🧩 Repository Structure
 ├── app-tier/
 │   ├── index.js
@@ -240,6 +241,7 @@ Integrating EC2, RDS, and S3 for a production-like setup
 │   └── scripts/
 ├── nginx.conf
 └── README.md
+
 ---
 
 
