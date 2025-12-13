@@ -264,7 +264,7 @@ AWS | DevOps | Data Analyst Enthusiast
 ---
 
 ### Project Output Code
-![Output](result.png)
+![Output](result2.png)
 ![Output](result1.png)
 
 
