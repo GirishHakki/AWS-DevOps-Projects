@@ -105,7 +105,7 @@ pipeline {
     stages {
         stage('1. Git Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/pandacloud1/DevopsProject2.git'
+                git branch: 'main', url: 'https://github.com/GirishHakki/DevopsProject2.git'
             }
         }
         
@@ -302,8 +302,8 @@ pipeline {
                 script {
                     // Step 1: Delete services and deployments
                     sh 'kubectl delete svc kubernetes || true'
-                    sh 'kubectl delete deploy pandacloud-app || true'
-                    sh 'kubectl delete svc pandacloud-app || true'
+                    sh 'kubectl delete deploy girishhakki-app || true'
+                    sh 'kubectl delete svc girishhakki-app || true'
 
                     // Step 2: Delete ArgoCD installation and namespace
                     sh 'kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml || true'
